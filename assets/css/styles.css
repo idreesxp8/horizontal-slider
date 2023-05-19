@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6{
     
 /******************colors**************/
 body{
+    background-color: #003257;
     transition: all 0.5s;
 }
 a{
@@ -108,14 +109,16 @@ a:hover{
 #horizontal-slider{
     flex-wrap: nowrap;
     overflow-x: scroll;
+    padding-top: 50px;
 }
 .hr-scroll-section{
-    background-color: #003257;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
 }
 .hr-card{
     position: relative;
@@ -173,7 +176,7 @@ a:hover{
     font-size: 40px;
     line-height: 48px;
     letter-spacing: 0.01em;
-    min-height: 80px;
+    min-height: 100px;
     margin-bottom: 30px;
 }
 .hr-card p{
@@ -193,9 +196,91 @@ a:hover{
 .hr-card.color2 .hr-image{
     background-position: bottom;
 }
+ul#menu-wrap{
+    list-style: none;
+}
+ul#menu-wrap li{
+    border-bottom: 2px solid #83969D;
+    position: relative;
+}
+ul#menu-wrap li:last-child{
+    border-bottom: 0px solid #83969D;
+}
+ul#menu-wrap li a{
+    display: block;
+    pad: 5px;
+    width: 100%;
+    color: #83969D;
+    font-family: "lato-regular" !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+    transition: all 0.5s;
+}
+ul#menu-wrap li:hover a, ul#menu-wrap li.active a{
+    color: #B56921;
+    transition: all 0.5s;
+}
+ul#menu-wrap li::before, ul#menu-wrap li.active::before{
+    content: '';
+    position: absolute;
+    top: 16px;
+    bottom: 0;
+    left: -28px;
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+ul#menu-wrap li:hover::before, ul#menu-wrap li.active::before{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+ul#menu-wrap li a:hover{
+    opacity: 1 !important;
+}
 
 
 
+#main{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#sidebar{
+    width: 360px;
+    padding-top: 250px;
+}
+#content{
+    width: calc(100% - 360px);
+}
+@media (min-width: 1921px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        max-width: 1920px; 
+    }
+    #main{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 1024px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 100% !important;
+    }
+    #main{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
 
 
 
