@@ -185,7 +185,7 @@ a:hover{
     font-size: 18px;
     line-height: 26px;
 }
-.col-lg-3.col-md-4.col-sm-12{
+.hr-slider-item{
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -247,7 +247,14 @@ ul#menu-wrap li a:hover{
     opacity: 1 !important;
 }
 
-
+#horizontal-slider{
+    position: relative;
+}
+.slider-btns-wrap{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
 
 #main{
     display: flex;
@@ -256,11 +263,12 @@ ul#menu-wrap li a:hover{
     padding-right: 20px;
 }
 #sidebar{
-    width: 222px;
+    width: 280px;
     padding-top: 160px;
+    padding-left: 50px;
 }
 #content{
-    width: calc(100% - 222px);
+    width: calc(100% - 280px);
 }
 @media (min-width: 1921px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
@@ -277,8 +285,8 @@ ul#menu-wrap li a:hover{
         max-width: 100% !important;
     }
     #main{
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 126px;
+        padding-right: 54px;
     }
 }
 
