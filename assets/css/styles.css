@@ -141,7 +141,7 @@ a:hover{
     top: -40px;
 }
 .hr-card.color4 .hr-image{
-    max-width: 200px;
+    max-width: 230px;
     top: -15px;
     right: auto;
 }
@@ -254,17 +254,23 @@ ul#menu-wrap li a:hover{
 #horizontal-slider, #scroll-horizon-slider{
     position: relative;
 }
+.hr-card.color2 .hr-image, .hr-card.color5 .hr-image{
+    top: 30px;
+}
+.hr-card.color6 .hr-image{
+    left: 30px;
+}
 .slider-btns-wrap{
     position: absolute;
     top: 45%;
-    right: -75px;
+    right: -45px;
     text-align: right;
     z-index: 9;
 }
 .slider-arrows{
     position: relative;
     display: inline-block;
-    margin: 0 0px 0 50px;
+    margin: 0 0px 0 40px;
 }
 .slider-arrows:before{
     content: '';
