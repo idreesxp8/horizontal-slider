@@ -188,6 +188,10 @@ a:hover{
 .hr-slider-item{
     padding-left: 0 !important;
     padding-right: 0 !important;
+    width: 440px;
+}
+.hr-slider-item.large-item{
+    width: 550px;
 }
 .hr-content-wrap{
     padding-left: 20px;
@@ -247,15 +251,38 @@ ul#menu-wrap li a:hover{
     opacity: 1 !important;
 }
 
-#horizontal-slider{
+#horizontal-slider, #scroll-horizon-slider{
     position: relative;
 }
 .slider-btns-wrap{
     position: absolute;
-    top: 50%;
-    right: 0;
+    top: 45%;
+    right: -75px;
+    text-align: right;
+    z-index: 9;
 }
-
+.slider-arrows{
+    position: relative;
+    display: inline-block;
+    margin: 0 0px 0 50px;
+}
+.slider-arrows:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider-arrows.slider-prev-arrow:before{
+    background-image: url('../images/prev-arrow.svg');
+}
+.slider-arrows.slider-next-arrow:before{
+    background-image: url('../images/next-arrow.svg');
+}
 #main{
     display: flex;
     justify-content: space-between;
@@ -264,11 +291,12 @@ ul#menu-wrap li a:hover{
 }
 #sidebar{
     width: 280px;
-    padding-top: 160px;
+    padding-top: 70px;
     padding-left: 50px;
 }
 #content{
     width: calc(100% - 280px);
+    padding-right: 30px;
 }
 @media (min-width: 1921px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
