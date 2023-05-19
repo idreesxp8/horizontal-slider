@@ -256,11 +256,11 @@ ul#menu-wrap li a:hover{
     padding-right: 20px;
 }
 #sidebar{
-    width: 360px;
+    width: 222px;
     padding-top: 160px;
 }
 #content{
-    width: calc(100% - 360px);
+    width: calc(100% - 222px);
 }
 @media (min-width: 1921px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
@@ -277,8 +277,8 @@ ul#menu-wrap li a:hover{
         max-width: 100% !important;
     }
     #main{
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 }
 
