@@ -30,6 +30,12 @@ body, p{
 h1, h2, h3, h4, h5, h6{
     font-family: "lato-regular" !important;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 /****************colors****************/
 
 .color1 h2, .color1 a{
