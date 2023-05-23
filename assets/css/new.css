@@ -199,6 +199,10 @@ a:hover{
     padding-right: 0 !important;
 }
 
+.row{
+    flex-wrap: nowrap !important;
+}
+
 .hr-content-wrap{
     padding-left: 20px;
     padding-right: 20px;
