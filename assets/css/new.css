@@ -327,7 +327,9 @@ ul#menu-wrap li a:hover{
 #content{
     padding-right: 30px;
 }
-
+.slider-arrows.disabled{
+    opacity: 0.3;
+}
 .menu_outter {
     position: sticky;
     height: 100vh;
