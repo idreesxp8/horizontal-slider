@@ -110,6 +110,8 @@ a:hover{
 #horizontal-slider{
     flex-wrap: nowrap;
     padding-top: 50px;
+    position: fixed !important;
+    top: 60px !important;
 }
 .hr-scroll-section{
     color: #fff;
@@ -292,6 +294,7 @@ ul#menu-wrap li a:hover{
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
 }
 #sidebar{
     padding-top: 70px;
@@ -336,17 +339,55 @@ ul#menu-wrap li a:hover{
     }
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 1440px){
     .hr-card h2{
         font-size: 32px;
         line-height: 40px;
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 1020px){
+    #scroll-horizon-slider.desktop-scroll-section{
+        display: flex;
+    }
+    #scroll-horizon-slider.mobile-scroll-section{
+        display: none;
+    }
+}
+@media (max-width: 1019px) and (min-width: 220px){
+    #scroll-horizon-slider.desktop-scroll-section, .slider-btns-wrap{
+        display: none;
+    }
+    #scroll-horizon-slider.mobile-scroll-section{
+        display: block;
+        padding-top: 50px;
+    }
+    .page-content-wrap{
+        flex-direction: column-reverse;
+    }
+    .menu_outter{
+        height: 100px;
+    }
+    #sidebar {
+        padding-top: 30px;
+        padding-left: 15px;
+        width: 100%;
+    }
+    ul#menu-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: scroll;
+        padding: 0;
+    }
+    ul#menu-wrap li::before, ul#menu-wrap li.active::before{
+        left: -21px;
+        display: none;
+    }
+    ul#menu-wrap li:last-child {
+        border-bottom: 2px solid #83969D;
+    }
+    #content{
+        padding-right: 0px;
     }
 }
