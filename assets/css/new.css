@@ -340,6 +340,15 @@ ul#menu-wrap li a:hover{
     }
 }
 
+@media (max-width: 1920px) and (min-width: 1450px){
+    #horizontal-slider{
+        top: 190px !important;
+    }
+    .slider-btns-wrap {
+        top: 44%;
+        left: -30px;
+    }
+}
 @media (max-width: 1920px) and (min-width: 1024px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 100% !important;
