@@ -82,4 +82,7 @@
     #sidebar{
         padding-left: 0px !important;
     }
+    .hr-scroll-section{
+        min-height: auto;
+    }
 }

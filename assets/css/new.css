@@ -144,7 +144,7 @@ a:hover{
     top: -40px;
 }
 .hr-card.color4 .hr-image{
-    max-width: 230px;
+    max-width: 50%;
     top: -15px;
     right: auto;
 }

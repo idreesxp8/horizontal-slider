@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Horizontal Slider</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='./assets/css/bootstrap/css/bootstrap.min.css' type='text/css'>
+    <link rel='stylesheet' href='./assets/css/slick.css' type='text/css'>
+    <!-- <link rel='stylesheet' href='./assets/css/styles.css' type='text/css'> -->
+    <style>
+        .slick-slide img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main" class="main-page-content-wrap">
+        <div id="content" class="left-content">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slideshow">
+                                <div class="slide">
+                                    <img src="https://res.cloudinary.com/setholito/image/upload/c_scale,w_1000/v1470969182/brody/spring-2016/IMG_7056.jpg" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://res.cloudinary.com/setholito/image/upload/c_scale,w_1000/v1470969182/brody/spring-2016/IMG_7041.jpg" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://res.cloudinary.com/setholito/image/upload/c_scale,w_1000/v1470969182/brody/spring-2016/IMG_7196.jpg" alt="" />
+                                </div>
+                                <div class="slide">
+                                    <img src="https://res.cloudinary.com/setholito/image/upload/c_scale,w_1000/v1470969182/brody/spring-2016/IMG_7076.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    
+
+    <script src="./assets/js/jQuery/jquery-3.6.0.min.js"></script>
+    <script src='./assets/js/bootstrap/js/bootstrap.bundle.min.js'></script>
+    <script src="./assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/slick/slick.js"></script>
+    <!-- <script src="./assets/js/custom.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $('.slideshow').slick({
+                dots: false,
+                infinite: true,
+                centerPadding: '0px',
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+                // responsive: [
+                //     {
+                //         breakpoint: 480,
+                //         settings: {
+                //             centerPadding: '0px',
+                //             centerMode: true,
+                //             slidesToShow: 1,
+                //             slidesToScroll: 1
+                //         }
+                //     }
+                // ]
+            });
+
+        });
+    </script>
+</body>
+</html>
