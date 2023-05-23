@@ -112,6 +112,7 @@ a:hover{
     padding-top: 50px;
     position: fixed !important;
     top: 60px !important;
+    left: 100px !important;
 }
 .hr-scroll-section{
     color: #fff;
