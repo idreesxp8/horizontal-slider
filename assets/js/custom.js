@@ -38,15 +38,19 @@ jQuery(document).ready(function($) {
   });
 
   // Create a proxy element for Dragging
- 
-
-  var myDraggable = Draggable.create("#horizontal-slider", {
-    type:"x",
-    bounds:".container",
-    edgeResistance:0.5,
-    throwProps:true,
-  });
-
+  var proxy = document.createElement('div');
+  var draggable = Draggable.create(proxy, {
+    trigger: '#horizontal-slider',
+    type: 'x',
+    inertia: true,
+    throwProps: true,
+    onThrowUpdate: function() {
+      mastheadScrollTrigger.scroll(-this.x);
+    },
+    onDrag: function() {
+      mastheadScrollTrigger.scroll(-this.x);
+    },
+  })[0];
 
   // Event listener to update the proxy element when scrolling with the mouse wheel
   window.addEventListener('wheel', updateProxy);
