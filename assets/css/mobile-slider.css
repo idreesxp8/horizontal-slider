@@ -84,5 +84,28 @@
     }
     .hr-scroll-section{
         min-height: auto;
+        padding-top: 70px;
+    }
+    #main{
+        display: block !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .hr-content-wrap{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #scroll-horizon-slider1{
+        padding-top: 30px;
+    }
+    #scroll-horizon-slider1 .container{
+        padding: 0 !important;
+    }
+    .hr-card h2{
+        min-height: 88px;
+    }
+    .slick-arrow{
+        top: 35%;
     }
 }
