@@ -367,7 +367,7 @@ ul#menu-wrap li a:hover{
         top: 60px !important;
     }
     .slider-btns-wrap {
-        top: 44%;
+        /* top: 44%; */
         left: -30px;
     }
 }
