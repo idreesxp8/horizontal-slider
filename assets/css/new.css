@@ -329,6 +329,7 @@ ul#menu-wrap li a:hover{
 }
 .slider-arrows.disabled{
     opacity: 0.3;
+    pointer-events: none;
 }
 .menu_outter {
     position: sticky;
