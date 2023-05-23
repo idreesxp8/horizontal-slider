@@ -118,7 +118,7 @@ a:hover{
     padding-top: 50px;
     position: fixed !important;
     top: 60px !important;
-    left: 100px !important;
+    /* left: 100px !important; */
 }
 .hr-scroll-section{
     color: #fff;
@@ -201,6 +201,9 @@ a:hover{
 
 .row{
     flex-wrap: nowrap !important;
+}
+.hr-slider-item:first-child{
+    margin-left: 100px;
 }
 
 .hr-content-wrap{

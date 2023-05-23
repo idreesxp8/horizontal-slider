@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
   var proxy = document.createElement('div');
   var draggable = Draggable.create("#horizontal-slider", {
     type: 'x',
-    bounds:"#main",
+    bounds:"body",
     inertia: true,
     throwProps: true,
   })[0];
