@@ -316,8 +316,18 @@ ul#menu-wrap li a:hover{
     background-color: #003257;
     display: flex;
     align-items: top;
-
 }
+.hr-slider-item{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 440px;
+}
+.hr-slider-item.large-item{
+    width: 550px;
+}
+
+
+
 
 
 @media (min-width: 1921px){
@@ -347,7 +357,7 @@ ul#menu-wrap li a:hover{
     }
 }
 
-@media (max-width: 1920px) and (min-width: 1020px){
+@media (min-width: 1020px){
     #scroll-horizon-slider.desktop-scroll-section{
         display: flex;
     }
