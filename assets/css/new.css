@@ -205,6 +205,9 @@ a:hover{
 .hr-slider-item:first-child{
     margin-left: 100px;
 }
+/* .hr-slider-item:last-child{
+    margin-right: 290px;
+} */
 
 .hr-content-wrap{
     padding-left: 20px;
