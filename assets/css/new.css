@@ -364,7 +364,7 @@ ul#menu-wrap li a:hover{
 
 @media (max-width: 1920px) and (min-width: 1450px){
     #horizontal-slider{
-        top: 190px !important;
+        top: 60px !important;
     }
     .slider-btns-wrap {
         top: 44%;
