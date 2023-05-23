@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
   // Create a proxy element for Dragging
  
 
-  var myDraggable = Draggable.create("#horizontal-slider", {
+  var myDraggable = Draggable.create("#dragable-div", {
     type:"x",
     bounds:".container",
     edgeResistance:0.5,
