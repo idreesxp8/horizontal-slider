@@ -199,6 +199,10 @@ a:hover{
     padding-right: 0 !important;
 }
 
+.page-content-wrap{
+    justify-content: space-between;
+}
+
 .row{
     flex-wrap: nowrap !important;
 }
@@ -278,7 +282,7 @@ ul#menu-wrap li a:hover{
 }
 .slider-btns-wrap{
     position: absolute;
-    top: 50%;
+    top: 345px;
     left: -55px;
     text-align: right;
     transform: translateY(-50%);
@@ -301,7 +305,9 @@ ul#menu-wrap li a:hover{
     background-size: contain;
 }
 .slider-arrows.slider-prev-arrow:before{
-    background-image: url('../images/prev-arrow.svg');
+    /* background-image: url('../images/prev-arrow.svg'); */
+    background-image: url('../images/next-arrow.svg');
+    transform: rotate(180deg);
 }
 .slider-arrows.slider-next-arrow:before{
     background-image: url('../images/next-arrow.svg');
