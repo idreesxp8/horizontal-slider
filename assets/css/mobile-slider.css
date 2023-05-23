@@ -1,0 +1,85 @@
+.slick-arrow{
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 99;
+}
+.slick-prev{
+    background-image: url(../images/prev-arrow.svg);
+    right: 40px;
+}
+.slick-next{
+    background-image: url(../images/next-arrow.svg);
+}
+
+@media (min-width: 1020px){
+    #scroll-horizon-slider.desktop-scroll-section{
+        display: flex;
+    }
+    #scroll-horizon-slider.mobile-scroll-section{
+        display: none;
+    }
+}
+@media (max-width: 1019px) and (min-width: 220px){
+    #scroll-horizon-slider.desktop-scroll-section, .slider-btns-wrap{
+        display: none;
+    }
+    #scroll-horizon-slider.mobile-scroll-section{
+        display: block;
+        padding-top: 50px;
+    }
+    .page-content-wrap{
+        flex-direction: column-reverse;
+    }
+    .menu_outter{
+        height: 100px;
+        padding: 0 20px !important;
+        overflow: hidden;
+    }
+    #sidebar {
+        padding-top: 30px;
+        padding-left: 15px;
+        width: 100%;
+    }
+    ul#menu-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: scroll;
+        padding: 0;
+    }
+    ul#menu-wrap li{
+        min-width: fit-content;
+        margin: 0 15px;
+    }
+    ul#menu-wrap li::before, ul#menu-wrap li.active::before{
+        left: -21px;
+        display: none;
+    }
+    ul#menu-wrap li:last-child {
+        border-bottom: 2px solid #83969D;
+    }
+    #content{
+        padding-right: 0px;
+    }
+    .hr-card h2{
+        min-height: 40px;
+    }
+    .hr-card{
+        padding-top: 160px;
+    }
+    .hr-card.color3 .hr-image{
+        top: -10px;
+    }
+    #sidebar{
+        padding-left: 0px !important;
+    }
+}
